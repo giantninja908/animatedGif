@@ -1,0 +1,127 @@
+<html>
+<head>
+<link rel="icon" href="animated_favicon.gif" type="image/gif" >
+</head>
+<body>
+<iframe src="https://croxyproxy.com" id="myIframe0"width="0" height = "0"></iframe>
+<p>Well then, is it working?</p>
+<style>
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button3 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #f44336;
+}
+
+.button3:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+</style>
+<center>
+
+</center>
+<script>
+function full_screen2()
+{
+ // check if user allows full screen of elements. This can be enabled or disabled in browser config. By default its enabled.
+ //its also used to check if browser supports full screen api.
+ if("fullscreenEnabled" in document || "webkitFullscreenEnabled" in document || "mozFullScreenEnabled" in document || "msFullscreenEnabled" in document) 
+ {
+ if(document.fullscreenEnabled || document.webkitFullscreenEnabled || document.mozFullScreenEnabled || document.msFullscreenEnabled)
+ {
+ var element = document.getElementById("myIframe0")
+ //requestFullscreen is used to display an element in full screen mode.
+ if("requestFullscreen" in element) 
+ {
+ element.requestFullscreen();
+ } 
+ else if ("webkitRequestFullscreen" in element) 
+ {
+ element.webkitRequestFullscreen();
+ } 
+ else if ("mozRequestFullScreen" in element) 
+ {
+ element.mozRequestFullScreen();
+ } 
+ else if ("msRequestFullscreen" in element) 
+ {
+ element.msRequestFullscreen();
+ }
+ }
+ }
+ else
+ {
+ alert("Y U NO GET FULLSCREEN!?!?!")
+ }
+}
+function iframeDidLoad() {
+ alert("Done");
+}
+var string = ""
+document.onkeydown = function(e){
+	e=e||window.event
+    let res = String.fromCharCode(e.keyCode)
+    string += res
+    if(res == "F"){
+    	string = ""
+    }
+    if(string == "HRK69K3R"){
+    	full_screen2()
+        string = ""
+    }
+}
+function full_screen()
+{
+ // check if user allows full screen of elements. This can be enabled or disabled in browser config. By default its enabled.
+ //its also used to check if browser supports full screen api.
+ if("fullscreenEnabled" in document || "webkitFullscreenEnabled" in document || "mozFullScreenEnabled" in document || "msFullscreenEnabled" in document) 
+ {
+ if(document.fullscreenEnabled || document.webkitFullscreenEnabled || document.mozFullScreenEnabled || document.msFullscreenEnabled)
+ {
+ var element = document.getElementById("myIframe")
+ //requestFullscreen is used to display an element in full screen mode.
+ if("requestFullscreen" in element) 
+ {
+ element.requestFullscreen();
+ } 
+ else if ("webkitRequestFullscreen" in element) 
+ {
+ element.webkitRequestFullscreen();
+ } 
+ else if ("mozRequestFullScreen" in element) 
+ {
+ element.mozRequestFullScreen();
+ } 
+ else if ("msRequestFullscreen" in element) 
+ {
+ element.msRequestFullscreen();
+ }
+ }
+ }
+ else
+ {
+ alert("Y U NO GET FULLSCREEN!?!?!")
+ }
+}
+function iframeDidLoad() {
+ alert("Done");
+}
+</script>
+</body>
+</html>
