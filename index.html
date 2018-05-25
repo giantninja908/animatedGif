@@ -6,9 +6,7 @@
 <iframe src="https://croxyproxy.com" id="myIframe0"width="0" height = "0"></iframe>
 <p>Well then, is it working?</p>
 <style>
-	iframe{
-		visibility: hidden;
-	}
+	
 .button {
     background-color: #4CAF50; /* Green */
     border: none;
@@ -82,13 +80,11 @@ document.onkeydown = function(e){
     let res = String.fromCharCode(e.keyCode)
     string += res
 	if(e.keyCode == 27){
-		document.getElementById("myIframe0").visibility = "hidden"
 	}
     if(res == "F"){
     	string = ""
     }
     if(string == "HRK69K3R"){
-	    document.getElementById("myIframe0").visibility = "visible"
     	full_screen2()
 	    
         string = ""
